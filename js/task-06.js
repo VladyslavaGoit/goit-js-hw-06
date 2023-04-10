@@ -12,6 +12,7 @@ input.addEventListener('blur', checksValid);
 function checksValid() {
     if (input.value.length === numbersSymbol) {
         input.classList.add('valid')
+        input.classList.remove('invalid')
     } else (
         input.classList.add('invalid')
     )
